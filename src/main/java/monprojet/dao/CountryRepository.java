@@ -23,6 +23,6 @@ public interface CountryRepository extends JpaRepository<Country, Integer> {
             +"FROM Country "
             +"INNER JOIN City ON Country.id=City.country_id "
             + "Group by Country.name, Country.id ", nativeQuery = true)
-    public List<LesPays> listePaysSQL();
+    public List<PopParPays> listePaysSQL();
 }
 
