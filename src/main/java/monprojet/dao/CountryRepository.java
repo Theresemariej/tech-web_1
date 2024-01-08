@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import monprojet.entity.City;
 import monprojet.entity.Country;
-import monprojet.dao.LesPays;
+import monprojet.dao.PopParPays;
 // This will be AUTO IMPLEMENTED by Spring 
 
 public interface CountryRepository extends JpaRepository<Country, Integer> {
