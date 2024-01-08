@@ -24,6 +24,6 @@ public interface CountryRepository extends JpaRepository<Country, Integer> {
             "FROM COUNTRY"+
             "INNER JOIN CITY ON COUNTRY.ID = CITY.COUNTRY_ID"+
             "GROUP BY COUNTRY.NAME", nativeQuery = true)
-    public List<LesPays> listePaysJPQL();
+    public List<PopParPays> listePaysJPQL();
 
 }
